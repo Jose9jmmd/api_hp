@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JS -->
+    <script defer src="js/fetch.js"></script>
+    <script defer src="js/render.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <title>Harry Potter API</title>
+</head>
+
+<body class="text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark p-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <a class="navbar-brand" href="#">API HP</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="characters" id="characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="students" id="students">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staff" id="staff">Teachers and Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spells" id="spells">Spells</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 w-100 text-white" type="search" placeholder="Search..." id="search_input">
+                    <button class="btn btn-outline-light" type="submit" id="search_btn"><i
+                            class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center" id="title_page"></h1>
+    <div class="container my-5 d-flex flex-wrap gap-5 mx-auto" id="container">
+    </div>
+    <nav>
+        <ul class="pagination justify-content-center">
+        </ul>
+      </nav>
+</body>
+
+</html>
